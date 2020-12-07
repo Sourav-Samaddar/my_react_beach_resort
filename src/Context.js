@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import items from './data'
+//import items from './data'
 import Client from './Contentful'
 
 const RoomContext = React.createContext();
@@ -82,7 +82,7 @@ class RoomProvider extends Component {
 
     filterRooms = () => {
         let {rooms,type,capacity,price,
-            minPrice,maxPrice,minSize,maxSize,breakfast,pets} = this.state;
+            minSize,maxSize,breakfast,pets} = this.state;
         let tempRooms = [...rooms] 
         //Room type filter 
         if(type !== 'all') {
